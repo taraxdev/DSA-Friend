@@ -21,3 +21,26 @@ class HelloWorld {
 }
 
 ```
+
+# Recursion
+### Factorial of a number
+
+```java
+
+class HelloWorld {
+    static int fact(int n){
+            if(n==0) {
+                return 1;
+            }else{
+                int next = fact(n-1);
+                return next*n;
+            }
+            
+        }
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.print(fact(5));
+    }
+}
+
+```
